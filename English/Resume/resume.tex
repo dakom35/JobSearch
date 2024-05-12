@@ -1,0 +1,136 @@
+\documentclass[11pt,a4paper]{moderncv}
+\usepackage{pifont}
+% ModernCV themes
+\moderncvstyle{classic} % Choose the style
+\moderncvcolor{blue} % Choose the color
+\usepackage{geometry}
+\geometry
+{
+    left=0.3in,
+    right=0.6in,
+    top=0.05in,
+    bottom=0.5in,
+}
+
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{pifont}
+%\pagestyle{empty} % should remove the page number
+
+% Personal data
+\name{Alfred}{Lalanne}
+\title{Embedded Systems Developer}
+\address{Paris, France}
+\phone[mobile]{+33~(6)~88~33~06~05}
+\email{alfred.lalanne@gmail.com}
+\social[linkedin][linkedin.com/in/alfred-lalanne-714b5b192/]{My LinkedIn}
+\social[github][github.com/dakom35]{My GitHub}
+\photo[64pt][0.4pt]{moi.jpeg}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+    \cventry
+        {2019--2023}
+        {Electronics Engineering Degree}
+        {ENSEA}
+        {Cergy (95)}
+        {}
+        {Comprehensive education covering analog and digital electronics, signal processing, embedded systems design, communication systems and project management}
+    \cventry
+        {2017--2019}
+        {Preparatory Classes for Engineering School}
+        {Brizeux}
+        {Quimper (29)}
+        {}
+        {Intensive programs preparing students for engineering schools. Covering advanced mathematics, physics, chemistry, and engineering sciences, emphasizing analytical and critical thinking skills for entrance exams to  engineering schools}   
+    \cventry
+        {2016--2017}
+        {Scientific Military Preparatory Class}
+        {French Navy}
+        {Brest (29)}
+        {}
+        {Bridge Program: Facilitated transition from high school to advanced academic levels, supported by a military environment, fostering organization and readiness for post-secondary education}  
+    \cventry
+        {2014--2016}
+        {Scientific High School Diploma}
+        {Paul-Bert}
+        {Paris (75)}
+        {}
+        {Competence in mathematics, physics, chemistry, biology, and humanities} 
+        
+\section{Experience}
+\cventry
+    {2020--2023}
+    {Engineering Apprentice}
+    {IDEMIA}
+    {Osny (95)}
+    {}
+    {
+    Python thermal image processing development (4 months) \newline
+    Contribution to the ALIX project, a system aimed at identifying owners of lost luggage in airports
+    \begin{itemize}
+        \setlength{\itemindent}{1cm}
+        \item Modified specifications for the industrial pilot phase
+        \item Conducted research and testing on the luggage detection component
+        \item Investigated, adapted, and tested the hardware LED driver
+        \item Formulated and verified the electrical wiring diagram
+        \item Optimized the signal-to-noise ratio of the cameras using OpenCV for C++
+        \item Designed an industrial bench for camera calibration, optimized for mass production
+        \begin{itemize}
+            \setlength{\itemindent}{1.5cm}
+            \item Designed mechanical structure with practical knowledge of optics theory
+            \item Developed focus tuning and white balance calibration algorithms in C++
+        \end{itemize}
+    \end{itemize}
+    }
+\cventry
+    {2024--}
+    {Electrical Testing engineer}
+    {ICE TECH SAS}
+    {Buchelay (78)}
+    {}
+    {
+    Responsible for the electrical testing of smart cards 
+    \begin{itemize}
+        \setlength{\itemindent}{1cm}
+        \item Development of a software to analyze the quality of the smart cards production from scratch
+        \begin{itemize}
+            \setlength{\itemindent}{1.5cm}
+            \item Analysis of the information contained in the logfiles from the electrical tester
+            \item Development of the core parsing and data representation algorithms 
+            \item Refactoring for object-oriented design
+            \item Incorporating this library into a user-friendly GUI
+        \end{itemize}
+        \item  Created documentation to facilitate operator use of the electrical tester 
+        \item Providing on-the-spot support to operators in troubleshooting errors during smart card production
+        \item Troubleshooting and Resolution of Electrical Tester Malfunctions
+        \begin{itemize}
+            \setlength{\itemindent}{1.5cm}
+            \item Investigating root causes of electrical tester malfunctions
+            \item Formulating and testing hypotheses to resolve issues
+            \item Documenting troubleshooting efforts and successful solutions in a detailed report
+            \item Implementing preventative measures to avoid future occurrences of similar issues
+        \end{itemize}
+    \end{itemize}
+    }
+    
+\section{Skills}
+
+\cvitem{Programming}
+    {C++ \ding{72}\ding{72}\ding{72}, C \ding{72}\ding{72}\ding{72} , Python \ding{72}\ding{72}\ding{73} , Matlab \ding{72}\ding{72}\ding{73} , Java \ding{72}\ding{73}\ding{73} , Javascript \ding{72}\ding{73}\ding{73} }
+\cvitem{Libraries}
+    {OpenCV \ding{72}\ding{72}\ding{72} , PyQt5 \ding{72}\ding{72}\ding{72} , NumPy \ding{72}\ding{72}\ding{73} , SFML \ding{72}\ding{72}\ding{73} , Matplotlib \ding{72}\ding{72}\ding{73}, RealSense \ding{72}\ding{73}\ding{73}}
+
+\section{Languages}
+\cvitemwithcomment{French}{Native language}{}
+\cvitemwithcomment{ English}{Full Professional Proficiency}{915/990 TOEIC exam}
+
+
+\end{document}
+
+
+
+
