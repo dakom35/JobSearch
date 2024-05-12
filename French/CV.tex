@@ -1,0 +1,135 @@
+\documentclass[11pt,a4paper]{moderncv}
+\usepackage{pifont}
+% Thèmes ModernCV
+\moderncvstyle{classic} % Choisissez le style
+\moderncvcolor{blue} % Choisissez la couleur
+\usepackage{geometry}
+\geometry
+{
+    left=0.3in,
+    right=0.6in,
+    top=0.05in,
+    bottom=0.5in,
+}
+
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{pifont}
+%\pagestyle{empty} % devrait supprimer le numéro de page
+
+% Données personnelles
+\name{Alfred}{Lalanne}
+\title{Développeur en Systèmes Embarqués}
+\address{Paris, France}
+\phone[mobile]{+33~(6)~88~33~06~05}
+\email{alfred.lalanne@gmail.com}
+\social[linkedin][linkedin.com/in/alfred-lalanne-714b5b192/]{Mon LinkedIn}
+\social[github][github.com/dakom35]{Mon GitHub}
+\photo[64pt][0.4pt]{moi.jpeg}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Formation}
+    \cventry
+        {2019--2023}
+        {Diplôme d'Ingénieur en Électronique}
+        {ENSEA}
+        {Cergy (95)}
+        {}
+        {Formation complète couvrant l'électronique analogique et numérique, le traitement du signal, la conception de systèmes embarqués, les systèmes de communication, l'automatisation de la conception électronique et la gestion de projets.}
+    \cventry
+        {2017--2019}
+        {Classes Préparatoires aux Grandes Écoles d'Ingénieurs}
+        {Brizeux}
+        {Quimper (29)}
+        {}
+        {Programmes intensifs préparant les étudiants aux écoles d'ingénieurs. Couvrant les mathématiques avancées, la physique, la chimie et les sciences de l'ingénieur, mettant l'accent sur les compétences analytiques et critiques pour les examens d'entrée aux écoles d'ingénieurs.}   
+    \cventry
+        {2016--2017}
+        {Classe Préparatoire Militaire Scientifique}
+        {Marine Nationale}
+        {Brest (29)}
+        {}
+        {Programme d'adaptation facilitant la transition du lycée aux niveaux académiques supérieurs, soutenu par un environnement militaire, favorisant l'organisation et la préparation aux études postsecondaires.}  
+    \cventry
+        {2014--2016}
+        {Baccalauréat Scientifique}
+        {Paul-Bert}
+        {Paris (75)}
+        {}
+        {Compétences en mathématiques, physique, chimie, biologie et sciences humaines} 
+        
+\section{Expérience}
+\cventry
+    {2020--2023}
+    {Apprenti Ingénieur}
+    {IDEMIA}
+    {Osny (95)}
+    {}
+    {
+    Développement en Python pour le traitement d'images thermiques (4 mois) \newline
+    Contribution au projet ALIX, un système visant à identifier les propriétaires de bagages perdus dans les aéroports. 
+    \begin{itemize}
+        \setlength{\itemindent}{1cm}
+        \item Modification des spécifications pour la phase pilote industrielle
+        \item Recherche et tests sur le composant de détection des bagages.
+        \item Investigation, adaptation et test du pilote matériel LED.
+        \item Formulation et vérification du schéma électrique.
+        \item Optimisation du rapport signal/bruit des caméras en utilisant OpenCV pour C++
+        \item Conception d'un banc industriel pour la calibration des caméras, optimisé pour la production en masse
+        \begin{itemize}
+            \setlength{\itemindent}{1.5cm}
+            \item Conception de la structure mécanique avec des connaissances pratiques de la théorie de l'optique
+            \item Développement d'algorithmes de réglage de la mise au point et de la calibration de la balance des blancs en C++
+        \end{itemize}
+    \end{itemize}
+    }
+\cventry
+    {2024--maintenant}
+    {Ingénieur en Test Électrique}
+    {ICE TECH SAS}
+    {Buchelay (78)}
+    {}
+    {
+    Responsable des tests électriques des cartes à puce 
+    \begin{itemize}
+        \setlength{\itemindent}{1cm}
+        \item Développement d'un logiciel pour analyser la qualité de la production des cartes à puce à partir de zéro
+        \begin{itemize}
+            \setlength{\itemindent}{1.5cm}
+            \item Analyse des informations contenues dans les fichiers journaux provenant du testeur électrique
+            \item Développement des algorithmes d'analyse et de représentation des données
+            \item Refactoring pour la conception orientée objet
+            \item Intégration de cette bibliothèque dans une interface utilisateur conviviale
+        \end{itemize}
+        \item Création de documentation pour faciliter l'utilisation du testeur électrique par les opérateurs. 
+        \item Fourniture d'un support sur place aux opérateurs pour le dépannage des erreurs lors de la production de cartes à puce.
+        \item Dépannage et Résolution des Pannes du Testeur Électrique
+        \begin{itemize}
+            \setlength{\itemindent}{1.5cm}
+            \item Investigation des causes fondamentales des pannes du testeur électrique.
+            \item Formulation et test d'hypothèses pour résoudre les problèmes.
+            \item Documentation des efforts de dépannage et des solutions réussies dans un rapport détaillé.
+            \item Mise en œuvre de mesures préventives pour éviter les occurrences futures de problèmes similaires.
+        \end{itemize}
+    \end{itemize}
+    }
+    
+\section{Compétences}
+
+\cvitem{Programmation}
+    {C++ \ding{72}\ding{72}\ding{72}, C \ding{72}\ding{72}\ding{72} , Python \ding{72}\ding{72}\ding{73} , Matlab \ding{72}\ding{72}\ding{73} , Java \ding{72}\ding{73}\ding{73} , Javascript \ding{72}\ding{73}\ding{73} }
+\cvitem{
+
+Bibliothèques}
+    {OpenCV \ding{72}\ding{72}\ding{72} , PyQt5 \ding{72}\ding{72}\ding{72} , NumPy \ding{72}\ding{72}\ding{73} , SFML \ding{72}\ding{72}\ding{73} , Matplotlib \ding{72}\ding{72}\ding{73}, RealSense \ding{72}\ding{73}\ding{73}}
+
+\section{Langues}
+\cvitemwithcomment{Français}{Langue maternelle}{}
+\cvitemwithcomment{Anglais}{Maîtrise professionnelle complète}{Examen TOEIC 915/990}
+
+
+\end{document}
+```
