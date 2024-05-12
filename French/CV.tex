@@ -19,7 +19,7 @@
 
 % Données personnelles
 \name{Alfred}{Lalanne}
-\title{Développeur en Systèmes Embarqués}
+\title{Développeur Systèmes Embarqués}
 \address{Paris, France}
 \phone[mobile]{+33~(6)~88~33~06~05}
 \email{alfred.lalanne@gmail.com}
@@ -38,56 +38,26 @@
         {ENSEA}
         {Cergy (95)}
         {}
-        {Formation complète couvrant l'électronique analogique et numérique, le traitement du signal, la conception de systèmes embarqués, les systèmes de communication, l'automatisation de la conception électronique et la gestion de projets.}
+        {Formation complète couvrant l'électronique analogique et numérique, le traitement du signal, la conception de systèmes embarqués, les systèmes de communication et la gestion de projets.}
     \cventry
         {2017--2019}
         {Classes Préparatoires aux Grandes Écoles d'Ingénieurs}
-        {Brizeux}
+        {Lycée Brizeux}
         {Quimper (29)}
         {}
-        {Programmes intensifs préparant les étudiants aux écoles d'ingénieurs. Couvrant les mathématiques avancées, la physique, la chimie et les sciences de l'ingénieur, mettant l'accent sur les compétences analytiques et critiques pour les examens d'entrée aux écoles d'ingénieurs.}   
+        {PCSI / PSI}   
     \cventry
         {2016--2017}
-        {Classe Préparatoire Militaire Scientifique}
-        {Marine Nationale}
+        {Classe Préparatoire aux Etudes Supérieures}
+        {Lycée Naval}
         {Brest (29)}
         {}
-        {Programme d'adaptation facilitant la transition du lycée aux niveaux académiques supérieurs, soutenu par un environnement militaire, favorisant l'organisation et la préparation aux études postsecondaires.}  
-    \cventry
-        {2014--2016}
-        {Baccalauréat Scientifique}
-        {Paul-Bert}
-        {Paris (75)}
-        {}
-        {Compétences en mathématiques, physique, chimie, biologie et sciences humaines} 
+        {Année de remise à niveau avec encadrement militaire}  
+
         
 \section{Expérience}
 \cventry
-    {2020--2023}
-    {Apprenti Ingénieur}
-    {IDEMIA}
-    {Osny (95)}
-    {}
-    {
-    Développement en Python pour le traitement d'images thermiques (4 mois) \newline
-    Contribution au projet ALIX, un système visant à identifier les propriétaires de bagages perdus dans les aéroports. 
-    \begin{itemize}
-        \setlength{\itemindent}{1cm}
-        \item Modification des spécifications pour la phase pilote industrielle
-        \item Recherche et tests sur le composant de détection des bagages.
-        \item Investigation, adaptation et test du pilote matériel LED.
-        \item Formulation et vérification du schéma électrique.
-        \item Optimisation du rapport signal/bruit des caméras en utilisant OpenCV pour C++
-        \item Conception d'un banc industriel pour la calibration des caméras, optimisé pour la production en masse
-        \begin{itemize}
-            \setlength{\itemindent}{1.5cm}
-            \item Conception de la structure mécanique avec des connaissances pratiques de la théorie de l'optique
-            \item Développement d'algorithmes de réglage de la mise au point et de la calibration de la balance des blancs en C++
-        \end{itemize}
-    \end{itemize}
-    }
-\cventry
-    {2024--maintenant}
+    {2024--ce jour}
     {Ingénieur en Test Électrique}
     {ICE TECH SAS}
     {Buchelay (78)}
@@ -96,35 +66,69 @@
     Responsable des tests électriques des cartes à puce 
     \begin{itemize}
         \setlength{\itemindent}{1cm}
-        \item Développement d'un logiciel pour analyser la qualité de la production des cartes à puce à partir de zéro
+        \item Développement intégral d'un logiciel pour analyser la qualité de la production des cartes à puce
         \begin{itemize}
             \setlength{\itemindent}{1.5cm}
             \item Analyse des informations contenues dans les fichiers journaux provenant du testeur électrique
             \item Développement des algorithmes d'analyse et de représentation des données
-            \item Refactoring pour la conception orientée objet
+            \item Refactorisation en une bibliothèque orientée objet (OOP)
             \item Intégration de cette bibliothèque dans une interface utilisateur conviviale
         \end{itemize}
-        \item Création de documentation pour faciliter l'utilisation du testeur électrique par les opérateurs. 
-        \item Fourniture d'un support sur place aux opérateurs pour le dépannage des erreurs lors de la production de cartes à puce.
-        \item Dépannage et Résolution des Pannes du Testeur Électrique
+        \item Rédaction de documentation concernant le testeur électrique
+        \item Support aux opérateurs lors de la production
+        \item Résolution de pannes complexes concernant le testeur électrique
         \begin{itemize}
             \setlength{\itemindent}{1.5cm}
-            \item Investigation des causes fondamentales des pannes du testeur électrique.
-            \item Formulation et test d'hypothèses pour résoudre les problèmes.
-            \item Documentation des efforts de dépannage et des solutions réussies dans un rapport détaillé.
-            \item Mise en œuvre de mesures préventives pour éviter les occurrences futures de problèmes similaires.
+            \item Détermination et résolution de la panne
+            \item Mise en œuvre de mesures préventives
         \end{itemize}
     \end{itemize}
     }
+\cventry
+    {2020--2023}
+    {Ingénieur Apprenti}
+    {IDEMIA}
+    {Osny (95)}
+    {}
+    {
+    Développement d'algorithmes de traitement d'images thermiques en Python (4 mois) \newline
+    Contribution au projet ALIX, un système visant à identifier les propriétaires de bagages perdus dans les aéroports. 
+    \begin{itemize}
+        \setlength{\itemindent}{1cm}
+        \item Modification du cahier des charges pour le pilote industriel
+        \item Modélisation 3D du système pour simuler les champs de vision des caméras avec Blender
+        \item Recherche et tests du composant de détection des bagages
+        \item Analyse, modification et test du driver d'éclairage LED
+        \item Élaboration et vérification du schéma électrique global
+        \item Optimisation du rapport signal à bruit des caméras en utilisant OpenCV pour C\texttt{++}
+        \item Conception d'un banc industriel pour la calibration des caméras, optimisé pour l'industrialisation
+        \begin{itemize}
+            \setlength{\itemindent}{1.5cm}
+            \item Conception de la structure mécanique 
+            \item Définition de la distance de mise au point (mires - capteur)
+            \item Développement et intégration d'algorithmes C\texttt{++} pour :
+            \begin{itemize}
+                \setlength{\itemindent}{2.5cm}
+                \item Détection automatique des mires (ArUco)
+                \item Réglage de la mise au point (calcul de MTF)
+                \item Calibration de la balance des blancs 
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    }
+
     
 \section{Compétences}
 
-\cvitem{Programmation}
-    {C++ \ding{72}\ding{72}\ding{72}, C \ding{72}\ding{72}\ding{72} , Python \ding{72}\ding{72}\ding{73} , Matlab \ding{72}\ding{72}\ding{73} , Java \ding{72}\ding{73}\ding{73} , Javascript \ding{72}\ding{73}\ding{73} }
-\cvitem{
-
-Bibliothèques}
+\cvitem
+    {Langages}
+    {C\texttt{++} \ding{72}\ding{72}\ding{72}, C \ding{72}\ding{72}\ding{72} , Python \ding{72}\ding{72}\ding{73} , Matlab \ding{72}\ding{72}\ding{73} , Java \ding{72}\ding{73}\ding{73} , Javascript \ding{72}\ding{73}\ding{73} }
+\cvitem
+    {Librairies}
     {OpenCV \ding{72}\ding{72}\ding{72} , PyQt5 \ding{72}\ding{72}\ding{72} , NumPy \ding{72}\ding{72}\ding{73} , SFML \ding{72}\ding{72}\ding{73} , Matplotlib \ding{72}\ding{72}\ding{73}, RealSense \ding{72}\ding{73}\ding{73}}
+\cvitem
+    {Simulation}
+    {LTSpice \ding{72}\ding{72}\ding{73} , OrCAD PSpice \ding{72}\ding{72}\ding{73}, Blender \ding{72}\ding{73}\ding{73}}
 
 \section{Langues}
 \cvitemwithcomment{Français}{Langue maternelle}{}
