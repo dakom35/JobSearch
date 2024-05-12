@@ -6,8 +6,10 @@
 \usepackage[scaled]{helvet}
 \renewcommand{\familydefault}{\sfdefault} % applies font
 \usepackage{tcolorbox}
+\usepackage{xcolor}
 
-\usepackage[left=0.3in, right=0.6in, top=0.05in, bottom=0.5in]{geometry}
+
+\usepackage[left=0.3in, right=0.3in, top=1.0in, bottom=1.0in]{geometry}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{enumitem}
@@ -15,6 +17,8 @@
 \usepackage{titlesec}
 \usepackage{microtype}
 \usepackage{xcolor} % Required for text color
+\usepackage{colortbl}
+\usepackage{array} % Required for m{...} column type
 
 % Define your own custom commands, styles, or formatting here
 
@@ -43,7 +47,7 @@
         \hfill % Add some horizontal space between the minipages
         \begin{minipage}[b]{0.3\linewidth}   % right minipage
             \raggedleft
-            \vspace*{-2\baselineskip} % Adjust the vertical position of the title
+            \vspace*{-4\baselineskip} % Adjust the vertical position of the image
             \includegraphics[width=0.7\linewidth]{moi.jpeg}
         \end{minipage}%
     \end{center} % End of center environment
@@ -59,45 +63,54 @@
 
 %\section{Domaines de compétence}
 
+\definecolor{skyblue}{RGB}{135,206,235} % Define sky blue color
+
+\definecolor{deepBlue}{RGB}{80,100,255} % Define deepBlue color
+\definecolor{cream}{RGB}{255,253,208}
+\definecolor{darkGray}{RGB}{64,64,64}
+
+
 \begin{flushright}
-    \begin{minipage}[t]{0.1\textwidth} % Left minipage
-        \textbf{Domaines de compétences}
- 
-    \end{minipage}%
-    \hspace{0.05\textwidth} % Space between minipages
-    \begin{minipage}[t]{0.8\textwidth} % Right minipage
-        \begin{itemize}[label={}, leftmargin=*, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % Remove bullet points and adjust left margin
+    \begin{tabular}{@{}m{0.1\textwidth}@{\hspace{0.07\textwidth}}!{\color{purple}\vline width 2pt}@{\hspace{0.025\textwidth}}m{0.75\textwidth}@{}}
+        \textcolor{gray!80}{Domaines de compétences} & % Use a subtle shade of blue
+        \begin{itemize}[label={}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % Remove bullet points and adjust left margin
             \setlength{\itemsep}{0pt} % Reduce spacing between lines
-            \item Hardware - Electronique 
-            \begin{itemize}[label={--}, leftmargin=*, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
-                \item \textcolor{gray!80}{Transistors : polarisation, technologie, logique }
-                \item \textcolor{gray!80}{Schémas électriques, routage }
+            \item \textcolor{gray!150}{Hardware - Electronique}
+            \begin{itemize}[label={\textcolor{gray!80}{--}}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
+                \item \textcolor{gray!80}{Conception de schémas électriques, routage, simulation }
                 \item \textcolor{gray!80}{Filtrage analogique actif et passif, Matlab}
             \end{itemize}
-            \item Electronique numérique 
-            \begin{itemize}[label={--}, leftmargin=*, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
+            \item \textcolor{gray!150}{Electronique numérique} 
+            \begin{itemize}[label={\textcolor{gray!80}{--}}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
                 \item \textcolor{gray!80}{Microcontrôleurs : programmation en C et Assembleur sur Keil-uVision }
                 \item \textcolor{gray!80}{Logique programmable : technologie FPGA, description VHDL}
                 \item \textcolor{gray!80}{Systèmes sur puce : SoC, SoC-FPGA, SoC-IP}
             \end{itemize}
-            \item Informatique 
-            \begin{itemize}[label={--}, leftmargin=*, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
+            \item \textcolor{gray!150}{Informatique}
+            \begin{itemize}[label={\textcolor{gray!80}{--}}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
                 \item \textcolor{gray!80}{Langages : C, C++, Python, Java, Assembleur}
                 \item \textcolor{gray!80}{Environnements : x86, ARM, VMs Linux, compilation croisée, FreeRTOS, microcontrôleurs}
                 \item \textcolor{gray!80}{IDE : STM32CubeIDE, VSCode, Eclipse}
                 \item \textcolor{gray!80}{Outils collaboratifs : Git, Jira, Confluence, Teams}
             \end{itemize}
-            \item Ingénierie système
-            \begin{itemize}[label={--}, leftmargin=*, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
+            \item \textcolor{gray!150}{Ingénierie système}
+            \begin{itemize}[label={\textcolor{gray!80}{--}}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
                 \item \textcolor{gray!80}{Rédaction de cahier des charges}
                 \item \textcolor{gray!80}{Etudes de faisabilité}
             \end{itemize}
         \end{itemize}
-    \end{minipage}
+    \end{tabular}
 \end{flushright}
+
+
+
 
 \section{Experience}
 % Your work experience details go here
+
+\begin{tabular}{p{0.4\textwidth}!{\color{deepBlue}\vline width 2pt}p{0.4\textwidth}}
+    Contenu de la première colonne & Contenu de la deuxième colonne \\
+\end{tabular}
 
 \section{Projects}
 % Details of your projects go here
