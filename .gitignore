@@ -27,3 +27,9 @@ French/Portfolio/Dossier de compétences.fls
 French/Portfolio/Dossier de compétences.log
 French/Portfolio/Dossier de compétences.out
 French/Portfolio/Dossier de compétences.synctex.gz
+*.out
+*.aux
+*.log
+*.fdb_latexmk
+*.fls
+*.synctex.gz
