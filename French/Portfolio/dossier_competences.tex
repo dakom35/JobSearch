@@ -23,7 +23,7 @@
 \usepackage{microtype}
 \usepackage{colortbl}
 \usepackage{array} % Required for m{...} column type
-
+\usepackage{lastpage} % Required for \pageref{LastPage} to get the total number of pages
 
 
 
@@ -44,12 +44,22 @@
 \definecolor{antiEnsea}{RGB}{32, 127, 87}
 \definecolor{professionalOrange}{RGB}{200, 100, 0}
 
+% Custom command to display current page number and total number of pages
+\newcommand{\PageNumbering}{%
+    \ifnum\value{page}>1%
+        \thepage\ / \pageref{LastPage}%
+    \else%
+        \thepage%
+    \fi%
+}
 
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{Alfred LALANNE}
-\lhead{Dossier de compétences} % Add your subtitle here
-\cfoot{\thepage}
+\fancyhead[L]{\textcolor{darkGray}{\textbf{Dossier de compétences}}} % Left header
+\fancyhead[R]{\textcolor{darkGray}{\textbf{Alfred LALANNE}}} % Right header
+\fancyfoot[R]{\PageNumbering} % Right footer with custom page numbering
+\renewcommand{\headrulewidth}{1pt} % Header rule width
+\renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
 \title{Ingénieur Électronique et Logiciel}
 
 
@@ -65,15 +75,16 @@
         \hfill % Add some horizontal space between the minipages
         \begin{minipage}[b]{0.3\linewidth}   % right minipage
             \raggedleft
-            \vspace*{-3\baselineskip} % Adjust the vertical position of the image
-            \includegraphics[width=0.5\linewidth]{moi.jpeg} \hspace{0.05\linewidth}
+            \vspace*{-1.78\baselineskip} % Adjust the vertical position of the image
+            \includegraphics[width=0.5\linewidth]{moi.jpeg} 
+            \hspace{0.1\linewidth}
         \end{minipage}%
     \end{center} % End of center environment
 }
 \makeatother
 
 
-
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
 
 \begin{document}
 
@@ -88,7 +99,7 @@
 
 \begin{center}
     \begin{tikzpicture}
-        \draw[mainBlue, line width=4pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
+        \draw[mainBlue, line width=1pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
     \end{tikzpicture}
 \end{center}
 
@@ -130,7 +141,7 @@
 
 \begin{center}
     \begin{tikzpicture}
-        \draw[mainBlue, line width=4pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
+        \draw[mainBlue, line width=1pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
     \end{tikzpicture}
 \end{center}
 
@@ -165,16 +176,17 @@
 
 \begin{center}
     \begin{tikzpicture}
-        \draw[mainBlue, line width=4pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
+        \draw[mainBlue, line width=1pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
     \end{tikzpicture}
 \end{center}
 
 
-\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{secondaryBlue}\vline width 2pt}@{}m{0.7\textwidth}@{}}
+\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{secondaryBlue}\vline width 2pt}@{}C{0.7\textwidth}@{}}
     \textcolor{secondaryBlue}{\textbf{Secteurs d'activités}} & 
-    \begin{itemize}[label={\textcolor{gray!80}{}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt, after=\vspace*{-\baselineskip}]
+    \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt, after=\vspace*{-\baselineskip}]
         \item \textcolor{gray!80}{Systèmes d'identification et de sécurité}
         \item \textcolor{gray!80}{Systèmes d'acquisition automatisés}
+        \item \textcolor{gray!80}{Smart-Cards}
     \end{itemize}
 \end{tabular}
 
@@ -183,7 +195,7 @@
 
 \begin{center}
     \begin{tikzpicture}
-        \draw[mainBlue, line width=4pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
+        \draw[mainBlue, line width=1pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
     \end{tikzpicture}
 \end{center}
 
