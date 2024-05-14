@@ -24,25 +24,44 @@
 \usepackage{colortbl}
 \usepackage{array} % Required for m{...} column type
 
-% Define your own custom commands, styles, or formatting here
+
+
+
+
+% Page style setup
+
+\definecolor{titleBlue}{RGB}{0, 102, 204}
+\definecolor{skyblue}{RGB}{135,206,235}
+\definecolor{deepBlue}{RGB}{80,100,255} 
+\definecolor{mainBlue}{RGB}{0, 51, 102} 
+\definecolor{secondaryBlue}{RGB}{0, 153, 204} %
+\definecolor{steelBlue}{RGB}{70, 130, 180}
+\definecolor{darkCyan}{RGB}{0, 139, 139}
+\definecolor{cream}{RGB}{255,253,208}
+\definecolor{darkGray}{RGB}{54, 69, 79}
+\definecolor{deepPurple}{RGB}{121, 53, 149}
+\definecolor{enseaRed}{RGB}{191, 0, 80}
+\definecolor{antiEnsea}{RGB}{32, 127, 87}
+\definecolor{professionalOrange}{RGB}{200, 100, 0}
+
 
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{Alfred LALANNE}
-\lhead{Dossier de compétences}
+\lhead{Dossier de compétences} % Add your subtitle here
 \cfoot{\thepage}
+\title{Ingénieur Électronique et Logiciel}
 
-\title{Dossier de compétences}
-\author{Alfred LALANNE}
+\author{}
 \date{} % Remove the date
 
-% Redefine \maketitle to remove the date and include photo
+% Redefine \maketitle to remove the date and include photo and colored title
 \makeatletter
 \renewcommand{\maketitle}{%
     \begin{center} % Center the whole content
         \centering
         
-        {\Large\bfseries \@title \par}
+        {\Large\bfseries{\textcolor{darkGray}{\@title}} \par}
         \vskip 0.5em%
         {\large \@author \par}
         \begin{minipage}[b]{0.6\linewidth} % left minipage
@@ -51,8 +70,8 @@
         \hfill % Add some horizontal space between the minipages
         \begin{minipage}[b]{0.3\linewidth}   % right minipage
             \raggedleft
-            \vspace*{-4\baselineskip} % Adjust the vertical position of the image
-            \includegraphics[width=0.7\linewidth]{moi.jpeg}
+            \vspace*{-3\baselineskip} % Adjust the vertical position of the image
+            \includegraphics[width=0.6\linewidth]{moi.jpeg} \hspace{0.05\linewidth}
         \end{minipage}%
     \end{center} % End of center environment
 }
@@ -63,31 +82,23 @@
 
 \begin{document}
 
+
 \maketitle
 
 %\section{Domaines de compétence}
 
-\definecolor{skyblue}{RGB}{135,206,235} % Define sky blue color
 
-\definecolor{deepBlue}{RGB}{80,100,255} % Define deepBlue color
-\definecolor{steelBlue}{RGB}{70, 130, 180}
-\definecolor{darkCyan}{RGB}{0, 139, 139}
-\definecolor{cream}{RGB}{255,253,208}
-\definecolor{darkGray}{RGB}{54, 69, 79}
-\definecolor{deepPurple}{RGB}{121, 53, 149}
-\definecolor{enseaRed}{RGB}{191, 0, 80}
-\definecolor{antiEnsea}{RGB}{32, 127, 87} % complementary of enseaRed / 2 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DOMAINES DE COMPETENCES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{center}
     \begin{tikzpicture}
-        \draw[enseaRed, line width=4pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
+        \draw[mainBlue, line width=4pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
     \end{tikzpicture}
 \end{center}
 
-\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{antiEnsea}\vline width 2pt}@{}m{0.7\textwidth}@{}}
-    \textcolor{antiEnsea}{\textbf{Domaines de compétences}} &
+\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{secondaryBlue}\vline width 2pt}@{}m{0.7\textwidth}@{}}
+    \textcolor{secondaryBlue}{\textbf{Domaines de compétences}} &
     \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % Remove bullet points and adjust left margin
         \setlength{\itemsep}{0pt} % Reduce spacing between lines
 
@@ -124,13 +135,13 @@
 
 \begin{center}
     \begin{tikzpicture}
-        \draw[enseaRed, line width=4pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
+        \draw[mainBlue, line width=4pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
     \end{tikzpicture}
 \end{center}
 
 
-\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{antiEnsea}\vline width 2pt}@{}m{0.7\textwidth}@{}}
-    \textcolor{antiEnsea}{\textbf{Langages\newline Outils\newline Normes}} & 
+\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{secondaryBlue}\vline width 2pt}@{}m{0.7\textwidth}@{}}
+    \textcolor{secondaryBlue}{\textbf{Langages\newline Outils\newline Normes}} & 
     \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] 
         \setlength{\itemsep}{0pt} % Reduce spacing between lines
 
@@ -159,13 +170,13 @@
 
 \begin{center}
     \begin{tikzpicture}
-        \draw[enseaRed, line width=4pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
+        \draw[mainBlue, line width=4pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
     \end{tikzpicture}
 \end{center}
 
 
-\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{antiEnsea}\vline width 2pt}@{}m{0.7\textwidth}@{}}
-    \textcolor{antiEnsea}{\textbf{Secteurs d'activités}} & 
+\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{secondaryBlue}\vline width 2pt}@{}m{0.7\textwidth}@{}}
+    \textcolor{secondaryBlue}{\textbf{Secteurs d'activités}} & 
     \begin{itemize}[label={\textcolor{gray!80}{}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt, after=\vspace*{-\baselineskip}]
         \item \textcolor{gray!80}{Systèmes d'identification et de sécurité}
         \item \textcolor{gray!80}{Systèmes d'acquisition automatisés}
@@ -177,14 +188,14 @@
 
 \begin{center}
     \begin{tikzpicture}
-        \draw[enseaRed, line width=4pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
+        \draw[mainBlue, line width=4pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
     \end{tikzpicture}
 \end{center}
 
-%\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{antiEnsea}\vline width 2pt}@{}m{0.7\textwidth}@{}}
+%\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{secondaryBlue}\vline width 2pt}@{}m{0.7\textwidth}@{}}
 
-\begin{tabular}{@{\hspace{0.05\textwidth}} m{0.1\textwidth} @ {\hspace{0.05\textwidth}} ! {\color{antiEnsea}\vline width 2pt \hspace{0.05\textwidth}} @ {}m{0.4\textwidth} @{\hspace{0.15\textwidth}} m{1\linewidth}@{}}
-    \textcolor{antiEnsea}{\textbf{Formation}} & 
+\begin{tabular}{@{\hspace{0.05\textwidth}} m{0.1\textwidth} @ {\hspace{0.05\textwidth}} ! {\color{secondaryBlue}\vline width 2pt \hspace{0.05\textwidth}} @ {}m{0.4\textwidth} @{\hspace{0.15\textwidth}} m{0.5\linewidth}@{}}
+    \textcolor{secondaryBlue}{\textbf{Formation}} & 
     \textcolor{darkGray}{Ingénieur électronicien ENSEA}
     \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt, after=\vspace*{-\baselineskip}]
         \item \textcolor{gray!80}{Année d'obtention du diplôme : 2023}
