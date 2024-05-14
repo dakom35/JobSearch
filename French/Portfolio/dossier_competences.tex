@@ -52,26 +52,21 @@
 \cfoot{\thepage}
 \title{Ingénieur Électronique et Logiciel}
 
-\author{}
+
 \date{} % Remove the date
 
 % Redefine \maketitle to remove the date and include photo and colored title
 \makeatletter
 \renewcommand{\maketitle}{%
-    \begin{center} % Center the whole content
-        \centering
-        
+    \begin{center} % Center the whole content    
         {\Large\bfseries{\textcolor{darkGray}{\@title}} \par}
-        \vskip 0.5em%
-        {\large \@author \par}
-        \begin{minipage}[b]{0.6\linewidth} % left minipage
-            
+        \begin{minipage}[b]{0.6\linewidth} % left (empty) minipage
         \end{minipage}%
         \hfill % Add some horizontal space between the minipages
         \begin{minipage}[b]{0.3\linewidth}   % right minipage
             \raggedleft
             \vspace*{-3\baselineskip} % Adjust the vertical position of the image
-            \includegraphics[width=0.6\linewidth]{moi.jpeg} \hspace{0.05\linewidth}
+            \includegraphics[width=0.5\linewidth]{moi.jpeg} \hspace{0.05\linewidth}
         \end{minipage}%
     \end{center} % End of center environment
 }
