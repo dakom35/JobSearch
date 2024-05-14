@@ -7,12 +7,13 @@
 
 \documentclass{article}
 \usepackage[scaled]{helvet}
+\usepackage{amssymb}
+\usepackage{textcomp} % for \textquotesingle
 \renewcommand{\familydefault}{\sfdefault} % applies font
 \usepackage{tcolorbox}
 \usepackage{xcolor}
-\usepackage[export]{adjustbox} % for \raisebox
 
-\usepackage[left=0.3in, right=0.3in, top=1.0in, bottom=1.0in]{geometry}
+\usepackage[left=0.1in, right=0.1in, top=0.55in, bottom=0.55in]{geometry}
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{hyperref}
@@ -69,11 +70,15 @@
 \definecolor{skyblue}{RGB}{135,206,235} % Define sky blue color
 
 \definecolor{deepBlue}{RGB}{80,100,255} % Define deepBlue color
+\definecolor{steelBlue}{RGB}{70, 130, 180}
+\definecolor{darkCyan}{RGB}{0, 139, 139}
 \definecolor{cream}{RGB}{255,253,208}
-\definecolor{darkGray}{RGB}{64,64,64}
+\definecolor{darkGray}{RGB}{54, 69, 79}
 \definecolor{deepPurple}{RGB}{121, 53, 149}
 \definecolor{enseaRed}{RGB}{191, 0, 80}
+\definecolor{antiEnsea}{RGB}{32, 127, 87} % complementary of enseaRed / 2 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DOMAINES DE COMPETENCES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{center}
     \begin{tikzpicture}
@@ -81,33 +86,33 @@
     \end{tikzpicture}
 \end{center}
 
-\begin{tabular}{@{}m{0.03\textwidth}@{\hspace{0.07\textwidth}}!{\color{deepPurple}\vline width 2pt}@{\hspace{0.025\textwidth}}m{0.75\textwidth}@{}}
-    \textcolor{gray!80}{\raggedright Domaines\\ de\\ compétences} & % Use a subtle shade of blue
-    \begin{itemize}[label={}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % Remove bullet points and adjust left margin
+\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{antiEnsea}\vline width 2pt}@{}m{0.7\textwidth}@{}}
+    \textcolor{antiEnsea}{\textbf{Domaines de compétences}} &
+    \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % Remove bullet points and adjust left margin
         \setlength{\itemsep}{0pt} % Reduce spacing between lines
 
-        \item \textcolor{gray!150}{Hardware - Electronique}
-        \begin{itemize}[label={\textcolor{gray!80}{--}}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
+        \item \textcolor{darkGray}{Hardware - Electronique}
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
             \item \textcolor{gray!80}{Conception de schémas électriques, routage, simulation }
             \item \textcolor{gray!80}{Filtrage analogique actif et passif, Matlab}
         \end{itemize}
 
-        \item \textcolor{gray!150}{Electronique numérique} 
-        \begin{itemize}[label={\textcolor{gray!80}{--}}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
+        \item \textcolor{darkGray}{Electronique numérique} 
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
             \item \textcolor{gray!80}{Microcontrôleurs : programmation en C et Assembleur sur Keil-uVision }
             \item \textcolor{gray!80}{Logique programmable : technologie FPGA, description VHDL}
             \item \textcolor{gray!80}{Systèmes sur puce : SoC, SoC-FPGA, SoC-IP}
         \end{itemize}
 
-        \item \textcolor{gray!150}{Informatique}
-        \begin{itemize}[label={\textcolor{gray!80}{--}}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
+        \item \textcolor{darkGray}{Informatique}
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
             \item \textcolor{gray!80}{Programmation bas-niveau : microcontrôleurs, FreeRTOS}
             \item \textcolor{gray!80}{Traitement d'image}
             \item \textcolor{gray!80}{Développement jeux-vidéos}
         \end{itemize}
 
-        \item \textcolor{gray!150}{Ingénierie système}
-        \begin{itemize}[label={\textcolor{gray!80}{--}}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
+        \item \textcolor{darkGray}{Ingénierie système}
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt, after=\vspace*{-\baselineskip}] % reduce spacing & adjust left margin
             \item \textcolor{gray!80}{Rédaction de cahier des charges}
             \item \textcolor{gray!80}{Etudes de faisabilité}
         \end{itemize}
@@ -115,7 +120,7 @@
 \end{tabular}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LANGAGES OUTILS NORMES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{center}
     \begin{tikzpicture}
@@ -124,33 +129,33 @@
 \end{center}
 
 
-\begin{tabular}{@{}m{0.03\textwidth}@{\hspace{0.07\textwidth}}!{\color{deepPurple}\vline width 2pt}@{\hspace{0.025\textwidth}}m{0.75\textwidth}@{}}
-    \textcolor{gray!80}{Langages\newline Outils\newline Normes} & 
-    \begin{itemize}[label={}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] 
+\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{antiEnsea}\vline width 2pt}@{}m{0.7\textwidth}@{}}
+    \textcolor{antiEnsea}{\textbf{Langages\newline Outils\newline Normes}} & 
+    \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] 
         \setlength{\itemsep}{0pt} % Reduce spacing between lines
 
-        \item \textcolor{gray!150}{Langages}
-        \begin{itemize}[label={\textcolor{gray!80}{}}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] 
+        \item \textcolor{darkGray}{Langages}
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] 
             \item \textcolor{gray!80}{C, C++, Python, Java, Assembleur}
         \end{itemize}
 
-        \item \textcolor{gray!150}{Outils}
-        \begin{itemize}[label={\textcolor{gray!80}{--}}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
+        \item \textcolor{darkGray}{Outils}
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt]
             \item \textcolor{gray!80}{Collaboratifs : Git, Jira, Confluence, Teams}
             \item \textcolor{gray!80}{IDEs : VSCode, STM32CubeIDE, Eclipse}
             \item \textcolor{gray!80}{Bibliothèques : OpenCV, PyQt5, NumPy, SFML, Matplotlib, RealSense}
             \item \textcolor{gray!80}{Modélisation : OrCAD PSpice, Visio, Blender, draw.io}
         \end{itemize}
 
-        \item \textcolor{gray!150}{Normes}
-        \begin{itemize}[label={\textcolor{gray!80}{}}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] 
+        \item \textcolor{darkGray}{Normes}
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt, after=\vspace*{-\baselineskip}] 
             \item \textcolor{gray!80}{ISO7816, ISO12233}
         \end{itemize}
     \end{itemize}
 \end{tabular}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SECTEURS D'ACTIVITES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{center}
     \begin{tikzpicture}
@@ -159,14 +164,16 @@
 \end{center}
 
 
-\begin{tabular}{@{}m{0.03\textwidth}@{\hspace{0.07\textwidth}}!{\color{deepPurple}\vline width 2pt}@{\hspace{0.025\textwidth}}m{0.75\textwidth}@{}}
-    \textcolor{gray!80}{Secteurs d'activités} & 
-    \textcolor{gray!80}{Systèmes d’identification et de sécurité} \newline 
-    \textcolor{gray!80}{Système d'acquisition automatisé} \newline 
+\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{antiEnsea}\vline width 2pt}@{}m{0.7\textwidth}@{}}
+    \textcolor{antiEnsea}{\textbf{Secteurs d'activités}} & 
+    \begin{itemize}[label={\textcolor{gray!80}{}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt, after=\vspace*{-\baselineskip}]
+        \item \textcolor{gray!80}{Systèmes d'identification et de sécurité}
+        \item \textcolor{gray!80}{Systèmes d'acquisition automatisés}
+    \end{itemize}
 \end{tabular}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FORMATION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{center}
     \begin{tikzpicture}
@@ -174,15 +181,16 @@
     \end{tikzpicture}
 \end{center}
 
+%\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{antiEnsea}\vline width 2pt}@{}m{0.7\textwidth}@{}}
 
-\begin{tabular}{@{}m{0.03\textwidth}@{\hspace{0.07\textwidth}}!{\color{deepPurple}\vline width 2pt}@{\hspace{0.025\textwidth}}m{0.65\textwidth}@{}m{0.6\linewidth}@{}}
-    \textcolor{gray!80}{Formation} & 
-    \textcolor{gray!150}{Ingénieur électronicien ENSEA}
-    \begin{itemize}[label={\textcolor{gray!80}{--}}, leftmargin=2em, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] % reduce spacing & adjust left margin
+\begin{tabular}{@{\hspace{0.05\textwidth}} m{0.1\textwidth} @ {\hspace{0.05\textwidth}} ! {\color{antiEnsea}\vline width 2pt \hspace{0.05\textwidth}} @ {}m{0.4\textwidth} @{\hspace{0.15\textwidth}} m{1\linewidth}@{}}
+    \textcolor{antiEnsea}{\textbf{Formation}} & 
+    \textcolor{darkGray}{Ingénieur électronicien ENSEA}
+    \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt, after=\vspace*{-\baselineskip}]
         \item \textcolor{gray!80}{Année d'obtention du diplôme : 2023}
         \item \textcolor{gray!80}{Spécialités : microélectronique et numérique} 
     \end{itemize} &
-    \raisebox{4\height}{\includegraphics[width=0.1\linewidth,valign=t]{ensea.jpg}} % adjust the raisebox value as needed
+    \includegraphics[width=0.1\linewidth]{ensea.jpg}
 \end{tabular}
 
 
