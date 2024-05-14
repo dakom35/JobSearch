@@ -53,6 +53,13 @@
     \fi%
 }
 
+% Custom page style for the first page
+\fancypagestyle{firstpage}{
+    \fancyhf{} % Clear header and footer
+    \renewcommand{\headrulewidth}{0pt} % Remove header rule
+    \renewcommand{\footrulewidth}{0pt} % Remove footer rule
+}
+
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\textcolor{darkGray}{\textbf{Dossier de compétences}}} % Left header
@@ -60,7 +67,23 @@
 \fancyfoot[R]{\PageNumbering} % Right footer with custom page numbering
 \renewcommand{\headrulewidth}{1pt} % Header rule width
 \renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
+
+
+% Fancyhdr settings for other pages
+\fancypagestyle{otherpages}{
+    \fancyhf{} % Clear header and footer
+    \fancyhead[L]{\textcolor{darkGray}{\textbf{Dossier de compétences}}} % Left header
+    \fancyhead[R]{\textcolor{darkGray}{\textbf{Alfred LALANNE}}} % Right header
+    \fancyfoot[C]{\thepage\ / \pageref{LastPage}} % Center footer with page number / total number of pages
+    \renewcommand{\headrulewidth}{2pt} % Header rule width
+    \renewcommand{\headrule}{\color{ruleColor}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
+}
+
+% Set page style for the first page
+\thispagestyle{firstpage}
+
 \title{Ingénieur Électronique et Logiciel}
+
 
 
 \date{} % Remove the date
