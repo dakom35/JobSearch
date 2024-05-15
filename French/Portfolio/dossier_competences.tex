@@ -69,11 +69,27 @@
 \renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
 
 
-% Fancyhdr settings for other pages
-\fancypagestyle{pro_experiences}{
+% Fancyhdr settings for displaying professionnal experiences
+
+\fancypagestyle{pro_experiences}
+{
     \fancyhf{} 
-    \fancyhead[L]{\textcolor{darkGray}{\textbf{Dossier de compétences}}} % Left header
-    \fancyhead[R]{\textcolor{darkGray}{\includegraphics[width=2cm]{logo_idemia.jpg}}} % Right header
+    \fancyhead[L] % Left header
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \textcolor{darkGray}{Dossier de compétences } 
+    } 
+    \fancyhead[C] % Central header
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \textcolor{darkGray}{\textbf{Expériences professionnelles}}
+    } 
+
+    \fancyhead[R]
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \raisebox{-1\height}{\includegraphics[width=2cm]{logo_idemia.jpg}}
+    } 
     \fancyfoot[C]{\thepage\ / \pageref{LastPage}} % Center footer with page number / total number of pages
     \renewcommand{\headrulewidth}{2pt} % Header rule width
     \renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
@@ -254,9 +270,56 @@
 \newpage
 \thispagestyle{pro_experiences}
 
-Système d'acquisition ALIX
 
 
+\begin{tabular}{@{\hspace{0.05\textwidth}} m{0.1\textwidth} @ {\hspace{0.05\textwidth}} ! {\color{secondaryBlue}\vline width 2pt \hspace{0.04\textwidth}} @ {}m{0.4\textwidth} @{\hspace{0.15\textwidth}} m{0.5\linewidth}@{}}
+    \textcolor{secondaryBlue}{\textbf{Système d'acquisition ALIX}} & 
+    \textcolor{darkGray}{Ingénieur électronicien ENSEA}
+    \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}]
+        \item \textcolor{gray!80}{Année d'obtention du diplôme : 2023} 
+        \item \textcolor{gray!80}{Spécialités : microélectronique et numérique} 
+    \end{itemize} &
+    \includegraphics[width=0.1\linewidth]{ensea.jpg}
+\end{tabular}
 
 
 \end{document}
+
+
+
+
+
+template of big tabular :
+
+\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{secondaryBlue}\vline width 2pt}@{}m{0.7\textwidth}@{}}
+    \textcolor{secondaryBlue}{\textbf{}} &
+    \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
+        \setlength{\itemsep}{0pt} 
+
+        \item \textcolor{darkGray}{}
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
+            \item \textcolor{gray!80}{}
+            \item \textcolor{gray!80}{}
+        \end{itemize}
+
+        \item \textcolor{darkGray}{} 
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
+            \item \textcolor{gray!80}{}
+            \item \textcolor{gray!80}{}
+            \item \textcolor{gray!80}{}
+        \end{itemize}
+
+        \item \textcolor{darkGray}{}
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
+            \item \textcolor{gray!80}{}
+            \item \textcolor{gray!80}{}
+            \item \textcolor{gray!80}{}
+        \end{itemize}
+
+        \item \textcolor{darkGray}{}
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}] % reduce spacing & adjust left margin
+            \item \textcolor{gray!80}{}
+            \item \textcolor{gray!80}{}
+        \end{itemize}
+    \end{itemize}
+\end{tabular}
