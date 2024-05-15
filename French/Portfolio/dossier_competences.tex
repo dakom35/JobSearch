@@ -70,13 +70,13 @@
 
 
 % Fancyhdr settings for other pages
-\fancypagestyle{otherpages}{
-    \fancyhf{} % Clear header and footer
+\fancypagestyle{pro_experiences}{
+    \fancyhf{} 
     \fancyhead[L]{\textcolor{darkGray}{\textbf{Dossier de compétences}}} % Left header
-    \fancyhead[R]{\textcolor{darkGray}{\textbf{Alfred LALANNE}}} % Right header
+    \fancyhead[R]{\textcolor{darkGray}{\includegraphics[width=2cm]{logo_idemia.jpg}}} % Right header
     \fancyfoot[C]{\thepage\ / \pageref{LastPage}} % Center footer with page number / total number of pages
     \renewcommand{\headrulewidth}{2pt} % Header rule width
-    \renewcommand{\headrule}{\color{ruleColor}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
+    \renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
 }
 
 % Set page style for the first page
@@ -128,31 +128,31 @@
 
 \begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{secondaryBlue}\vline width 2pt}@{}m{0.7\textwidth}@{}}
     \textcolor{secondaryBlue}{\textbf{Domaines de compétences}} &
-    \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt]
+    \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
         \setlength{\itemsep}{0pt} 
 
         \item \textcolor{darkGray}{Hardware - Electronique}
-        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] 
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
             \item \textcolor{gray!80}{Conception de schémas électriques, routage, simulation }
             \item \textcolor{gray!80}{Filtrage analogique actif et passif, Matlab}
         \end{itemize}
 
         \item \textcolor{darkGray}{Electronique numérique} 
-        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] 
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
             \item \textcolor{gray!80}{Microcontrôleurs : programmation en C et Assembleur sur Keil-uVision }
             \item \textcolor{gray!80}{Logique programmable : technologie FPGA, description VHDL}
             \item \textcolor{gray!80}{Systèmes sur puce : SoC, SoC-FPGA, SoC-IP}
         \end{itemize}
 
         \item \textcolor{darkGray}{Informatique}
-        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] 
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
             \item \textcolor{gray!80}{Programmation bas-niveau : microcontrôleurs, FreeRTOS}
             \item \textcolor{gray!80}{Informatique industrielle : traitement d'image, création d'interfaces graphiques}
             \item \textcolor{gray!80}{Développement jeux-vidéos}
         \end{itemize}
 
         \item \textcolor{darkGray}{Ingénierie système}
-        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt, after=\vspace*{-\baselineskip}] % reduce spacing & adjust left margin
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}] % reduce spacing & adjust left margin
             \item \textcolor{gray!80}{Rédaction de cahier des charges}
             \item \textcolor{gray!80}{Etudes de faisabilité}
         \end{itemize}
@@ -171,16 +171,15 @@
 
 \begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{secondaryBlue}\vline width 2pt}@{}m{0.7\textwidth}@{}}
     \textcolor{secondaryBlue}{\textbf{Langages\newline Outils\newline Normes}} & 
-    \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] 
-        \setlength{\itemsep}{0pt} % Reduce spacing between lines
+    \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
 
         \item \textcolor{darkGray}{Langages}
-        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt] 
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
             \item \textcolor{gray!80}{C, C++, Python, Java, Assembleur}
         \end{itemize}
 
         \item \textcolor{darkGray}{Outils}
-        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt]
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
             \item \textcolor{gray!80}{Collaboratifs : Git, Jira, Confluence, Teams}
             \item \textcolor{gray!80}{IDEs : VSCode, STM32CubeIDE, Eclipse}
             \item \textcolor{gray!80}{Bibliothèques : OpenCV, PyQt5, NumPy, SFML, Matplotlib, RealSense}
@@ -188,7 +187,7 @@
         \end{itemize}
 
         \item \textcolor{darkGray}{Normes}
-        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt, after=\vspace*{-\baselineskip}] 
+        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}] 
             \item \textcolor{gray!80}{ISO7816 (smart-cards), ISO12233 (traitement d'image)}
         \end{itemize}
     \end{itemize}
@@ -206,7 +205,7 @@
 
 \begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{secondaryBlue}\vline width 2pt}@{}C{0.7\textwidth}@{}}
     \textcolor{secondaryBlue}{\textbf{Secteurs d'activités}} & 
-    \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt, after=\vspace*{-\baselineskip}]
+    \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}]
         \item \textcolor{gray!80}{Systèmes d'identification et de sécurité}
         \item \textcolor{gray!80}{Systèmes d'acquisition automatisés}
         \item \textcolor{gray!80}{Smart-Cards}
@@ -227,7 +226,7 @@
 \begin{tabular}{@{\hspace{0.05\textwidth}} m{0.1\textwidth} @ {\hspace{0.05\textwidth}} ! {\color{secondaryBlue}\vline width 2pt \hspace{0.04\textwidth}} @ {}m{0.4\textwidth} @{\hspace{0.15\textwidth}} m{0.5\linewidth}@{}}
     \textcolor{secondaryBlue}{\textbf{Formation}} & 
     \textcolor{darkGray}{Ingénieur électronicien ENSEA}
-    \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt, after=\vspace*{-\baselineskip}]
+    \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}]
         \item \textcolor{gray!80}{Année d'obtention du diplôme : 2023} 
         \item \textcolor{gray!80}{Spécialités : microélectronique et numérique} 
     \end{itemize} &
@@ -235,8 +234,27 @@
 \end{tabular}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LANGUES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{center}
+    \begin{tikzpicture}
+        \draw[mainBlue, line width=1pt] (-0.4\linewidth,-2pt) -- (0.4\linewidth,-2pt);
+    \end{tikzpicture}
+\end{center}
+
+\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{secondaryBlue}\vline width 2pt}@{}C{0.7\textwidth}@{}}
+    \textcolor{secondaryBlue}{\textbf{Langues}} & 
+    \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}]
+        \item \textcolor{gray!80}{Anglais : bilingue (915/990 à l'examen TOEIC)}
+        \item \textcolor{gray!80}{Français : langue maternelle}
+    \end{itemize}
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EXPERIENCES IDEMIA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{pro_experiences}
+
+Système d'acquisition ALIX
 
 
 
