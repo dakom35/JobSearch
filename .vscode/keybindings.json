@@ -1,0 +1,6 @@
+[
+    {
+        "key": "ctrl+²",
+        "command": "latex-workshop.actions"
+    }
+]
