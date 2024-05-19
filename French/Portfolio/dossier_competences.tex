@@ -71,7 +71,7 @@
 
 % Fancyhdr settings for displaying professionnal experiences
 
-\fancypagestyle{pro_experiences}
+\fancypagestyle{pro_experience_idemia}
 {
     \fancyhf{} 
     \fancyhead[L] % Left header
@@ -95,6 +95,35 @@
     \renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
 }
 
+\fancypagestyle{pro_experience_linxens}
+{
+    \fancyhf{} 
+    \fancyhead[L] % Left header
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \textcolor{darkGray}{Dossier de compétences } 
+    } 
+    \fancyhead[C] % Central header 
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \textcolor{darkGray}{\textbf{Expériences professionnelles}}
+    } 
+
+    \fancyhead[R]
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \begin{minipage}[b]{2cm}
+            \includegraphics[width=3cm]{logo_linxens.jpg}
+        \end{minipage}
+        \hspace{25pt}
+        \begin{minipage}[b]{2cm}
+            \includegraphics[width=2cm]{logo_ice-tech.png}
+        \end{minipage}
+    } 
+    \fancyfoot[C]{\thepage\ / \pageref{LastPage}} % Center footer with page number / total number of pages
+    \renewcommand{\headrulewidth}{2pt} % Header rule width
+    \renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
+}
 % Set page style for the first page
 \thispagestyle{firstpage}
 
@@ -237,7 +266,6 @@
     \end{tikzpicture}
 \end{center}
 
-%\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{secondaryBlue}\vline width 2pt}@{}m{0.7\textwidth}@{}}
 
 \begin{tabular}{@{\hspace{0.05\textwidth}} m{0.1\textwidth} @ {\hspace{0.05\textwidth}} ! {\color{secondaryBlue}\vline width 2pt \hspace{0.04\textwidth}} @ {}m{0.4\textwidth} @{\hspace{0.15\textwidth}} m{0.5\linewidth}@{}}
     \textcolor{secondaryBlue}{\textbf{Formation}} & 
@@ -266,57 +294,137 @@
     \end{itemize}
 \end{tabular}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EXPERIENCES IDEMIA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EXPERIENCE IDEMIA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\thispagestyle{pro_experiences}
+\thispagestyle{pro_experience_idemia}
 
 
 \vspace*{2cm} % Vertical space from the top of the page
 
 
 
-\begin{tabular}{@{\hspace{0.05\textwidth}}m{0.1\textwidth}@{\hspace{0.05\textwidth}}!{\color{secondaryBlue}\vline width 2pt}@{}m{0.7\textwidth}@{}}
+\begin{tabular}
+    {
+        @{}m{0.1\textwidth}
+        @{\hspace{0.001\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+        @{}m{0.5\textwidth}
+        @{\hspace{0.025\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+        @{{\hspace{0.001\textwidth}}}m{0.3\textwidth}
+    }
     \textcolor{secondaryBlue}
     {
         \textbf{Projet ALIX}
     }           
     &
-    \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
+    \begin{itemize}
+        [label={}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
         \setlength{\itemsep}{0pt} 
         \item \textcolor{darkGray}{Description}
-        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
-            \item \textcolor{gray!80}{ALIX : Augmented Luggage Identity X}
-            \item \textcolor{gray!80}{Système de reconnaissance de bagages pour aéroports}
-            \item \textcolor{gray!80}{Phases: pilote industriel \& industrialisation}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
+            \item \textcolor{gray!80}{ALIX : Augmented Luggage Identity eXperience}
+            \item \textcolor{gray!80}{Système multi-caméras avec éclairage LED synchronisé}
+            \item \textcolor{gray!80}{Fonction : reconnaissance de bagages pour aéroports}
+            \item \textcolor{gray!80}{Pilote industriel}
+            \item \textcolor{gray!80}{Industrialisation}
         \end{itemize}
         \item \textcolor{darkGray}{Hardware - Electronique}
-        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
-            \item \textcolor{gray!80}{Adaptation carte électronique aux besoins du projet}
-            \item \textcolor{gray!80}{Création schémas câblage signaux système}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
+            \item \textcolor{gray!80}{Mise en place de la solution d'éclairage}
+            \begin{itemize}
+                [label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
+                \item \textcolor{gray!80}{Recherche de matériel existant}
+                \item \textcolor{gray!80}{Test de la puissance d'éclairage}
+                \item \textcolor{gray!80}{Test de la fréquence des flashs}
+                \item \textcolor{gray!80}{Analyse du mode de fonctionnement sécuritaire}
+                \item \textcolor{gray!80}{Adaptation d'un driver d'éclairage IDEMIA existant}
+                \item \textcolor{gray!80}{Déploiement du firmware sur les drivers}
+            \end{itemize}
+            \item \textcolor{gray!80}{Création des schémas de connexion des signaux du système}
+            \item \textcolor{gray!80}{Estimation précise de la puissance instantanée et moyenne demandée par le système au secteur}
             \item \textcolor{gray!80}{Recherche et test du capteur détecteur de bagages}
         \end{itemize}
         \item \textcolor{darkGray}{Informatique} 
-        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
-            \item \textcolor{gray!80}{Traitement }
-            \item \textcolor{gray!80}{}
-            \item \textcolor{gray!80}{}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
+            \item \textcolor{gray!80}{Conversion de code Python vers C++}
+            \item \textcolor{gray!80}{Traitement d'image : optimisation du SNR des caméras}
+            \item \textcolor{gray!80}{Réalisation d'un banc industriel de calibration des caméras}
+            \begin{itemize}
+            [label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]   
+                \item \textcolor{gray!80}{Intégration d'algorithmes de mesure de netteté (MTF) }
+                \item \textcolor{gray!80}{Intégration de l'algorithme de balance des blancs}
+                \item \textcolor{gray!80}{Développement de la détection automatique des mires}
+                \item \textcolor{gray!80}{Création des requètes HTTP associées}
+            \end{itemize}
+        \end{itemize}
+        \item \textcolor{darkGray}{Gestion de projet / Ingénierie système}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
+            \item \textcolor{gray!80}{Rédaction de cahier des charges}
+            \item \textcolor{gray!80}{Planification des tâches}
+            \item \textcolor{gray!80}{Diagramme d'interfaces systèmes}
+            \item \textcolor{gray!80}{Rédaction de la documentation du banc}  
         \end{itemize}
         \item \textcolor{darkGray}{}
-        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
-            \item \textcolor{gray!80}{}
-            \item \textcolor{gray!80}{}
-            \item \textcolor{gray!80}{}
+    \end{itemize}
+    &
+    \begin{itemize}[label={}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
+        \setlength{\itemsep}{0pt} 
+        \item \textcolor{darkGray}{Contexte}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
+            \item \textcolor{gray!80}{Partenariat Air France}
+            \item \textcolor{gray!80}{Basé sur l'IA}
+            \item \textcolor{gray!80}{Temps réel mou}
+            \item \textcolor{gray!80}{Jan. 2021 à Jan. 2022 (2 ans)}
+            \item \textcolor{gray!80}{Jan. 2022 à Juil. 2023 (7 mois)}
+        \end{itemize}
+        \item \textcolor{darkGray}{Outils}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
+            \item \textcolor{gray!80}{LTSpice}
+            \item \textcolor{gray!80}{Oscilloscopes (Lecroy)}
+            \item \textcolor{gray!80}{Luxmètre}
+            \item \textcolor{gray!80}{Logiciel de visualisation de PCB}
+            \item \textcolor{gray!80}{GBF, alimentations électriques}
+            \item \textcolor{gray!80}{Logiciel de dessin Visio}
+            \item \textcolor{gray!80}{STM32CubeProgrammer}
+            \item \textcolor{gray!80}{Python}
+            \item[\textcolor{white}{\checkmark}] \textcolor{gray!80}{} % ghost item
+            \item[\textcolor{white}{\checkmark}] \textcolor{gray!80}{} % ghost item
+        \end{itemize}
+        \item \textcolor{darkGray}{Environnement / Normes} 
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
+            \item \textcolor{gray!80}{ARM / Linux Debian}
+            \item \textcolor{gray!80}{Norme ISO 12233}
+            \item \textcolor{gray!80}{OpenCV pour C++}
+            \item \textcolor{gray!80}{VSCode, SSH, SVN, CMake}
+            \item \textcolor{gray!80}{Compilation croisée (schroot)}
+            \item \textcolor{gray!80}{ArUco}
+            \item \textcolor{gray!80}{cpp-httplib} 
+        \end{itemize}
+        \item \textcolor{darkGray}{Outils}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
+            \item \textcolor{gray!80}{Word, Excel}
+            \item \textcolor{gray!80}{Diagramme de Gantt}
+            \item \textcolor{gray!80}{Logiciel de schématique draw.io}
+            \item[\textcolor{white}{\checkmark}] \textcolor{gray!80}{} % ghost item
         \end{itemize}
         \item \textcolor{darkGray}{}
-        \begin{itemize}[label={\textcolor{gray!80}{\checkmark}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}] % reduce spacing & adjust left margin
-            \item \textcolor{gray!80}{}
-            \item \textcolor{gray!80}{}
-        \end{itemize}
     \end{itemize}
 \end{tabular}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EXPERIENCE ICE-TECH / LINXENS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newpage
+\thispagestyle{pro_experience_linxens}
+
+hello :-)
 
 \end{document}
 
