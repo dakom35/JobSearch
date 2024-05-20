@@ -70,97 +70,13 @@
 \renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
 
 
-% Fancyhdr settings for displaying professionnal experiences
 
-\fancypagestyle{pro_experience_idemia}
-{
-    \fancyhf{} 
-    \fancyhead[L] % Left header
-    {
-        \vspace*{10pt} % Adjust vertical space as needed
-        \textcolor{darkGray}{Dossier de compétences } 
-    } 
-    \fancyhead[C] % Central header
-    {
-        \vspace*{10pt} % Adjust vertical space as needed
-        \textcolor{darkGray}{\textbf{Expériences professionnelles}}
-    } 
 
-    \fancyhead[R]
-    {
-        \vspace*{10pt} % Adjust vertical space as needed
-        \begin{minipage}[b]{2cm}
-            \raisebox{-1.15\height}{\includegraphics[width=3cm]{logo_idemia.jpg}}
-        \end{minipage}
-        \hspace{50pt}
-        \begin{minipage}[b]{2cm}
-            \raisebox{-1\height}{\includegraphics[width=1cm]{ensea.jpg}}
-        \end{minipage}
-    } 
-    \fancyfoot[C]{\thepage\ / \pageref{LastPage}} % Center footer with page number / total number of pages
-    \renewcommand{\headrulewidth}{2pt} % Header rule width
-    \renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
-}
 
-\fancypagestyle{pro_experience_linxens}
-{
-    \fancyhf{} 
-    \fancyhead[L] % Left header
-    {
-        \vspace*{10pt} % Adjust vertical space as needed
-        \textcolor{darkGray}{Dossier de compétences } 
-    } 
-    \fancyhead[C] % Central header 
-    {
-        \vspace*{10pt} % Adjust vertical space as needed
-        \textcolor{darkGray}{\textbf{Expériences professionnelles}}
-    } 
 
-    \fancyhead[R]
-    {
-        \vspace*{10pt} % Adjust vertical space as needed
-        \begin{minipage}[b]{2cm}
-            \raisebox{-1.15\height}{\includegraphics[width=3cm]{logo_linxens.jpg}}
-        \end{minipage}
-        \hspace{50pt}
-        \begin{minipage}[b]{2cm}
-            \raisebox{-1\height}{\includegraphics[width=2cm]{logo_ice-tech.png}}
-        \end{minipage}
-    } 
-    \fancyfoot[C]{\thepage\ / \pageref{LastPage}} % Center footer with page number / total number of pages
-    \renewcommand{\headrulewidth}{2pt} % Header rule width
-    \renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
-}
 
-\fancypagestyle{student_experiences_ENSEA}
-{
-    \fancyhf{} 
-    \fancyhead[L] % Left header
-    {
-        \vspace*{10pt} % Adjust vertical space as needed
-        \textcolor{darkGray}{Dossier de compétences } 
-    } 
-    \fancyhead[C] % Central header 
-    {
-        \vspace*{10pt} % Adjust vertical space as needed
-        \textcolor{darkGray}{\textbf{Expériences professionnelles}}
-    } 
 
-    \fancyhead[R]
-    {
-        \vspace*{10pt} % Adjust vertical space as needed
-        \begin{minipage}[b]{2cm}
-            \raisebox{-1.15\height}{\includegraphics[width=3cm]{logo_linxens.jpg}}
-        \end{minipage}
-        \hspace{50pt}
-        \begin{minipage}[b]{2cm}
-            \raisebox{-1\height}{\includegraphics[width=2cm]{logo_ice-tech.png}}
-        \end{minipage}
-    } 
-    \fancyfoot[C]{\thepage\ / \pageref{LastPage}} % Center footer with page number / total number of pages
-    \renewcommand{\headrulewidth}{2pt} % Header rule width
-    \renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
-}
+
 % Set page style for the first page
 \thispagestyle{firstpage}
 
@@ -333,6 +249,34 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EXPERIENCE IDEMIA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
+\fancypagestyle{pro_experience_idemia}
+{
+    \fancyhf{} 
+    \fancyhead[L] % Left header
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \textcolor{darkGray}{Dossier de compétences } 
+    } 
+    \fancyhead[C] % Central header
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \textcolor{darkGray}{\textbf{Expériences professionnelles}}
+    } 
+    \fancyhead[R]
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \begin{minipage}[b]{2cm}
+            \raisebox{-1.25\height}{\includegraphics[width=2cm]{logo_idemia.jpg}}
+        \end{minipage}
+        \hspace{25pt}
+        \begin{minipage}[b]{2cm}
+            \raisebox{-1\height}{\includegraphics[width=0.75cm]{ensea.jpg}}
+        \end{minipage}
+    } 
+    \fancyfoot[C]{\thepage\ / \pageref{LastPage}} % Center footer with page number / total number of pages
+    \renewcommand{\headrulewidth}{2pt} % Header rule width
+    \renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
+}
 \thispagestyle{pro_experience_idemia}
 
 
@@ -572,6 +516,37 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EXPERIENCE ICE-TECH / LINXENS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
+
+\fancypagestyle{pro_experience_linxens}
+{
+    \fancyhf{} 
+    \fancyhead[L] % Left header
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \textcolor{darkGray}{Dossier de compétences } 
+    } 
+    \fancyhead[C] % Central header 
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \textcolor{darkGray}{\textbf{Expériences professionnelles}}
+    } 
+
+    \fancyhead[R]
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \begin{minipage}[b]{2cm}
+            \raisebox{-1.15\height}{\includegraphics[width=3cm]{logo_linxens.jpg}}
+        \end{minipage}
+        \hspace{50pt}
+        \begin{minipage}[b]{2cm}
+            \raisebox{-1\height}{\includegraphics[width=2cm]{logo_ice-tech.png}}
+        \end{minipage}
+    } 
+    \fancyfoot[C]{\thepage\ / \pageref{LastPage}} % Center footer with page number / total number of pages
+    \renewcommand{\headrulewidth}{2pt} % Header rule width
+    \renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
+}
+
 \thispagestyle{pro_experience_linxens}
 
 \vspace*{0cm}
@@ -582,6 +557,7 @@
     \textcolor{secondaryBlue}{\textbf{Ingénieur responsable du test électrique des produits biométriques}}
 \end{center}
 
+\vspace*{1cm}
 
 \begin{tabular}
     {
@@ -604,9 +580,9 @@
             \begin{itemize}
                 [label={\textcolor{gray!80}{$\triangleright$}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
                 \item \textcolor{gray!80}{Vérification finale de conformité avant envoi au client}
-                \item \textcolor{gray!80}{Système industriel grande capacité}
+                \item \textcolor{gray!80}{Système industriel à grande capacité de production}
             \end{itemize}
-            \item[\textcolor{white}{}] {} % ghost item
+            %\item[\textcolor{white}{}] {} % ghost item
         \end{itemize}
     \end{itemize}
     &
@@ -773,4 +749,453 @@
 
 \vfill % Stretchable vertical space
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% STUDENT LAB WORK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newpage
+
+\fancypagestyle{student_lab_work_ENSEA}
+{
+    \fancyhf{} 
+    \fancyhead[L] % Left header
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \textcolor{darkGray}{Dossier de compétences} 
+    } 
+    \fancyhead[C] % Central header 
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \textcolor{darkGray}{\textbf{Travaux Pratiques}}
+    } 
+    \fancyhead[R]
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \raisebox{-1\height}{\includegraphics[width=0.8cm]{ensea.jpg}}
+    } 
+    \fancyfoot[C]{\thepage\ / \pageref{LastPage}} % Center footer with page number / total number of pages
+    \renewcommand{\headrulewidth}{2pt} % Header rule width
+    \renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
+}
+
+\thispagestyle{student_lab_work_ENSEA}
+
+\vspace*{0cm}
+
+\vfill % Stretchable vertical space to center vertically the whole page
+
+% \begin{center}
+%     \textcolor{secondaryBlue}{\textbf{Travaux Pratiques}}
+% \end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TP SOC FPGA %%%%%%%%%%%%
+
+\begin{tabular}
+    {
+        @{}m{0.1\textwidth}
+        @{\hspace{0.001\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+        @{}m{0.5\textwidth}
+        @{\hspace{0.025\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+        @{{\hspace{0.001\textwidth}}}m{0.3\textwidth}
+    }
+    \textcolor{secondaryBlue}
+    {
+        \textbf{SoC FPGA}
+    } 
+    &
+    \begin{itemize}
+        [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}]
+        \setlength{\itemsep}{10pt}
+        \item \textcolor{darkGray}{Réalisations}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}] 
+
+            \item \textcolor{gray!80}{Création d'une IP soft utilisant le processeur MicroBlaze}
+            \item \textcolor{gray!80}{Défilement d'un message lumineux sur le contrôleur 7 segments}
+            \begin{itemize}
+                [label={\textcolor{gray!80}{$\triangleright$}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
+                \item \textcolor{gray!80}{Polling}
+                \item \textcolor{gray!80}{Interruptions}
+                \item \textcolor{gray!80}{Création d'une IP hardware dédiée}
+
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    &
+    \begin{itemize}
+        [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}]
+        \setlength{\itemsep}{10pt}
+        \item \textcolor{darkGray}{Outils}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}] 
+            
+            \item \textcolor{gray!80}{Vivado}
+            \item \textcolor{gray!80}{Vivado SDK}
+            \item \textcolor{gray!80}{ModelSim}
+            \item \textcolor{gray!80}{Langage C}
+            \item \textcolor{gray!80}{Langage VHDL}
+            \item[\textcolor{white}{\checkmark}] \textcolor{gray!80}{} % ghost item
+
+        \end{itemize}
+    \end{itemize}
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TP JAVA %%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+    \begin{tikzpicture}
+        \draw[mainBlue, line width=1pt] (-0.45\linewidth,-2pt) -- (0.45\linewidth,-2pt);
+    \end{tikzpicture}
+\end{center}
+
+\begin{tabular}
+    {
+        @{}m{0.1\textwidth}
+        @{\hspace{0.001\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+        @{}m{0.5\textwidth}
+        @{\hspace{0.025\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+        @{{\hspace{0.001\textwidth}}}m{0.3\textwidth}
+    }
+    \textcolor{secondaryBlue}
+    {
+        \textbf{Java}
+    } 
+
+    &
+    \begin{itemize}
+        [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}]
+        \setlength{\itemsep}{10pt}
+        \item \textcolor{darkGray}{Réalisations}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}] 
+
+            \item \textcolor{gray!80}{Utilitaire permettant d'indiquer l'aéroport le plus proche du lieu cliqué sur une représentation du globe terrestre}
+            \begin{itemize}
+                [label={\textcolor{gray!80}{$\triangleright$}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
+                \item \textcolor{gray!80}{Extraction de données à partir d'un fichier CSV}
+                \item \textcolor{gray!80}{Représentation du globe terrestre en 3D en rotation sur lui-même}
+                \item \textcolor{gray!80}{Algorithme de calcul de distance entre deux points de la surface terrestre}
+
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    &
+    \begin{itemize}
+        [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}]
+        \setlength{\itemsep}{10pt}
+        \item \textcolor{darkGray}{Outils}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}] 
+            
+            \item \textcolor{gray!80}{Bibliothèque JavaFx}
+            \item \textcolor{gray!80}{Eclipse IDE}
+            \item \textcolor{gray!80}{Design pattern : singleton }
+            \item \textcolor{gray!80}{OOP}
+            \item[\textcolor{white}{}] {} % ghost item
+            \item[\textcolor{white}{}] {} % ghost item
+            \item[\textcolor{white}{}] {} % ghost item   
+     
+        \end{itemize}
+    \end{itemize}
+\end{tabular}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TP MICROPROCESSEUR %%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+    \begin{tikzpicture}
+        \draw[mainBlue, line width=1pt] (-0.45\linewidth,-2pt) -- (0.45\linewidth,-2pt);
+    \end{tikzpicture}
+\end{center}
+
+
+
+\begin{tabular}
+    {
+        @{}m{0.1\textwidth}
+        @{\hspace{0.001\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+        @{}m{0.5\textwidth}
+        @{\hspace{0.025\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+        @{{\hspace{0.001\textwidth}}}m{0.3\textwidth}
+    }
+    \textcolor{secondaryBlue}
+    {
+        \textbf{\textmu Contrôleur}
+    } 
+
+    &
+    \begin{itemize}
+        [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}]
+        \setlength{\itemsep}{10pt}
+        \item \textcolor{darkGray}{Réalisations}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}] 
+
+            \item \textcolor{gray!80}{Chenillard à LEDs}
+            \begin{itemize}
+                [label={\textcolor{gray!80}{$\triangleright$}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
+                \item \textcolor{gray!80}{Développement mixant langage C et Assembleur}
+                \item \textcolor{gray!80}{Développement de fonctions liées à des interruptions}
+                \item \textcolor{gray!80}{Définition de nouvelles interruptions}
+                \item \textcolor{gray!80}{Développement par modification directe des registres}
+
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    &
+    \begin{itemize}
+        [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}]
+        \setlength{\itemsep}{10pt}
+        \item \textcolor{darkGray}{Outils}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}] 
+            
+            \item \textcolor{gray!80}{Carte OpenX05R-C}
+            \item \textcolor{gray!80}{Logiciel Keil-\textmu Vision5 }
+            \item \textcolor{gray!80}{Langage Assembleur}
+            \item \textcolor{gray!80}{Langage C}
+            \item[\textcolor{white}{}] {} % ghost item  
+     
+        \end{itemize}
+    \end{itemize}
+\end{tabular}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TP ELEC NUM %%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+    \begin{tikzpicture}
+        \draw[mainBlue, line width=1pt] (-0.45\linewidth,-2pt) -- (0.45\linewidth,-2pt);
+    \end{tikzpicture}
+\end{center}
+
+
+
+\begin{tabular}
+    {
+        @{}m{0.1\textwidth}
+        @{\hspace{0.001\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+        @{}m{0.5\textwidth}
+        @{\hspace{0.025\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+        @{{\hspace{0.001\textwidth}}}m{0.3\textwidth}
+    }
+    \textcolor{secondaryBlue}
+    {
+        \textbf{Electronique Numérique}
+    } 
+
+    &
+    \begin{itemize}
+        [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}]
+        \setlength{\itemsep}{10pt}
+        \item \textcolor{darkGray}{Minuteur réglable sur FPGA avec affichage LED}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}] 
+
+            \item \textcolor{gray!80}{Fonctionnalités}
+            \begin{itemize}
+                [label={\textcolor{gray!80}{$\triangleright$}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
+                \item \textcolor{gray!80}{Valeur maximale de départ : 99m99s}
+                \item \textcolor{gray!80}{Valeur de départ réglable via les boutons de la carte}
+                \item \textcolor{gray!80}{Affichage du décompte sur afficheur 7 segments}
+            \end{itemize}
+            \item \textcolor{gray!80}{Méthodologie}       
+            \begin{itemize}
+                [label={\textcolor{gray!80}{$\triangleright$}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
+                \item \textcolor{gray!80}{Décomposition en blocs fonctionnels}
+                \item \textcolor{gray!80}{Validations par simulation (fichier testbench)}
+                \item \textcolor{gray!80}{Validations fonctionnelles (grâce aux LEDs par exemple)}
+                \item \textcolor{gray!80}{Machine à état}
+                \item[\textcolor{white}{}] {} % ghost item  
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    &
+    \begin{itemize}
+        [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}]
+        \setlength{\itemsep}{10pt}
+        \item \textcolor{darkGray}{Outils}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}] 
+            
+            \item \textcolor{gray!80}{Carte Basys3 (Xilinx)}
+            \item \textcolor{gray!80}{Langage VHDL}
+            \item \textcolor{gray!80}{Logiciel Vivado}
+            \item \textcolor{gray!80}{Tableaux de Karnaugh}
+            \item[\textcolor{white}{}] {} % ghost item  
+            \item[\textcolor{white}{}] {} % ghost item 
+            \item[\textcolor{white}{}] {} % ghost item
+            \item[\textcolor{white}{}] {} % ghost item 
+            \item[\textcolor{white}{}] {} % ghost item 
+            \item[\textcolor{white}{}] {} % ghost item 
+
+        \end{itemize}
+    \end{itemize}
+\end{tabular}
+
+\vfill % Stretchable vertical space to center vertically the whole page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TP ELEC ANALOG %%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\thispagestyle{student_lab_work_ENSEA}
+
+\vspace*{2cm}
+
+%\vfill % Stretchable vertical space to center vertically the whole page
+
+\begin{tabular}
+    {
+        @{}m{0.1\textwidth}
+        @{\hspace{0.001\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+        @{}m{0.5\textwidth}
+        @{\hspace{0.025\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+        @{{\hspace{0.001\textwidth}}}m{0.3\textwidth}
+    }
+    \textcolor{secondaryBlue}
+    {
+        \textbf{Electronique Analogique}
+    } 
+
+    &
+    \begin{itemize}
+        [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}]
+        \setlength{\itemsep}{10pt}
+        \item \textcolor{darkGray}{Voiture télécommandée}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}] 
+
+            \item \textcolor{gray!80}{Fonctionnalités}
+            \begin{itemize}
+                [label={\textcolor{gray!80}{$\triangleright$}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
+                \item \textcolor{gray!80}{Avancer, reculer, tourner}
+            \end{itemize}
+            \item \textcolor{gray!80}{Méthodologie}       
+            \begin{itemize}
+                [label={\textcolor{gray!80}{$\triangleright$}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
+                \item \textcolor{gray!80}{Analyse fonctionnelle à partir du cahier des charges}
+                \item \textcolor{gray!80}{Décomposition et schématisation des différents blocs fonctionnels}
+                \item \textcolor{gray!80}{Simulation numérique du comportement électrique des blocs fonctionnels}
+                \item \textcolor{gray!80}{Validation par analyse des oscillogrammes}  
+                \item \textcolor{gray!80}{Réalisation régulière de comptes-rendus}
+                \item[\textcolor{white}{}] {} % ghost item  
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    &
+    \begin{itemize}
+        [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
+        \setlength{\itemsep}{10pt}
+        \item \textcolor{darkGray}{Outils}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt] 
+            
+            \item \textcolor{gray!80}{LTSpice}
+            \item \textcolor{gray!80}{Oscilloscopes (Tektronix)}
+            \item \textcolor{gray!80}{Générateurs de puissance}
+            \item \textcolor{gray!80}{GBF}
+            \item \textcolor{gray!80}{Plaque d'essai}
+
+        \end{itemize}
+        \item \textcolor{darkGray}{Matériel disponible}
+        \begin{itemize}
+            [label={\textcolor{gray!80}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}] 
+            \item \textcolor{gray!80}{Motoréducteurs}
+            \item \textcolor{gray!80}{Pont en H}
+            \item \textcolor{gray!80}{Carte Arduino}
+            \item \textcolor{gray!80}{Kit de communication 433MHz}
+        \end{itemize}
+    \end{itemize}
+\end{tabular}
+
+\vfill % Stretchable vertical space to center vertically the whole page
+
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TABULAR TEMPLATE %%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{tabular}
+    {
+        @{}m{0.1\textwidth}
+        @{\hspace{0.001\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+        @{}m{0.5\textwidth}
+        @{\hspace{0.025\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+        @{{\hspace{0.001\textwidth}}}m{0.3\textwidth}
+    }
+    \textcolor{secondaryBlue}
+    {
+        \textbf{Title}
+    } 
+
+    &
+    \begin{itemize}
+        [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}]
+        \setlength{\itemsep}{10pt}
+        \item \textcolor{darkGray}{Subtitle}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}] 
+
+            \item \textcolor{gray!80}{}
+            \begin{itemize}
+            [label={\textcolor{gray!80}{$\triangleright$}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
+                
+                \item \textcolor{gray!80}{}
+                \item \textcolor{gray!80}{}
+                \item \textcolor{gray!80}{}
+            
+            \end{itemize}
+            \item \textcolor{gray!80}{}
+            \item \textcolor{gray!80}{}
+            \item \textcolor{gray!80}{}
+            \begin{itemize}
+                [label={\textcolor{gray!80}{$\triangleright$}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
+                
+                \item \textcolor{gray!80}{}
+                \item \textcolor{gray!80}{}
+            
+            \end{itemize}
+            \item \textcolor{gray!80}{}
+            \begin{itemize}
+            [label={\textcolor{gray!80}{$\triangleright$}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
+                
+                \item \textcolor{gray!80}{}
+                \item \textcolor{gray!80}{}
+            
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    &
+    \begin{itemize}
+        [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}]
+        \setlength{\itemsep}{10pt}
+        \item \textcolor{darkGray}{Subtitle}
+        \begin{itemize}
+        [label={\textcolor{gray!80}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}] 
+            
+            \item \textcolor{gray!80}{}
+            \item \textcolor{gray!80}{}
+            \item \textcolor{gray!80}{}
+            \item \textcolor{gray!80}{}
+            \item \textcolor{gray!80}{}
+            \item[\textcolor{white}{\checkmark}] \textcolor{gray!80}{} % ghost item
+            \item[\textcolor{white}{\checkmark}] \textcolor{gray!80}{} % ghost item
+            \item[\textcolor{white}{\checkmark}] \textcolor{gray!80}{} % ghost item
+            \item[\textcolor{white}{\checkmark}] \textcolor{gray!80}{} % ghost item
+            \item[\textcolor{white}{\checkmark}] \textcolor{gray!80}{} % ghost item
+            \item[\textcolor{white}{\checkmark}] \textcolor{gray!80}{} % ghost item
+
+        \end{itemize}
+    \end{itemize}
+\end{tabular}
