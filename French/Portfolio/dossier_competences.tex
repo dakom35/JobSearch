@@ -614,7 +614,7 @@
         @{\hspace{0.001\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
         @{}m{0.5\textwidth}
         @{\hspace{0.025\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
-        @{{\hspace{0.001\textwidth}}}m{0.3\textwidth}
+        @{{\hspace{0.001\textwidth}}}m{0.3\textwidth} 
     }
     \textcolor{secondaryBlue}
     {
@@ -766,7 +766,7 @@
     \fancyhead[C] % Central header 
     {
         \vspace*{10pt} % Adjust vertical space as needed
-        \textcolor{darkGray}{\textbf{Travaux Pratiques}}
+        \textcolor{darkGray}{\textbf{Travaux Pratiques ENSEA}}
     } 
     \fancyhead[R]
     {
@@ -784,60 +784,51 @@
 
 \vfill % Stretchable vertical space to center vertically the whole page
 
-% \begin{center}
-%     \textcolor{secondaryBlue}{\textbf{Travaux Pratiques}}
-% \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TP SOC FPGA %%%%%%%%%%%%
 
 \begin{tabular}
-    {
-        @{}m{0.1\textwidth}
-        @{\hspace{0.001\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
-        @{}m{0.5\textwidth}
-        @{\hspace{0.025\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
-        @{{\hspace{0.001\textwidth}}}m{0.3\textwidth}
-    }
-    \textcolor{secondaryBlue}
-    {
-        \textbf{SoC FPGA}
-    } 
-    &
+{
+    @{}m{0.1\textwidth}
+    @{\hspace{0.001\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+    @{}m{0.5\textwidth}
+    @{\hspace{0.025\textwidth}}!{\color{secondaryBlue}\vline width 2pt} % not a column
+    @{{\hspace{0.001\textwidth}}}m{0.3\textwidth}
+}
+\textcolor{secondaryBlue}
+{
+    \textbf{SoC FPGA}
+} 
+&
+\begin{itemize}[label={}, topsep=8pt,partopsep=0pt, itemsep=0.5pt,parsep=2pt,after=\vspace*{-\baselineskip}] 
+    \setlength{\itemsep}{1pt}
+    \item \textcolor{darkGray}{Création d'une IP softcore pour contrôler un afficheur 7 segments}
     \begin{itemize}
-        [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}]
-        \setlength{\itemsep}{10pt}
-        \item \textcolor{darkGray}{Réalisations}
-        \begin{itemize}
-        [label={\textcolor{gray!100}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}] 
-
-            \item \textcolor{gray!100}{Création d'une IP soft utilisant le processeur MicroBlaze}
-            \item \textcolor{gray!100}{Défilement d'un message lumineux sur le contrôleur 7 segments}
-            \begin{itemize}
-                [label={\textcolor{gray!100}{$\triangleright$}}, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt]
-                \item \textcolor{gray!100}{Polling}
-                \item \textcolor{gray!100}{Interruptions}
-                \item \textcolor{gray!100}{Création d'une IP hardware dédiée}
-
-            \end{itemize}
-        \end{itemize}
+    [label={\textcolor{gray!100}{\checkmark}},topsep=8pt,partopsep=0pt,itemsep=0.5pt,parsep=2pt,
+     after=\vspace*{-\baselineskip}] 
+        \item \textcolor{gray!100}{Polling}
+        \item \textcolor{gray!100}{Interruptions}
+        \item \textcolor{gray!100}{Création d'une IP hardware dédiée}
     \end{itemize}
-    &
-    \begin{itemize}
-        [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}]
-        \setlength{\itemsep}{10pt}
-        \item \textcolor{darkGray}{Outils}
-        \begin{itemize}
-        [label={\textcolor{gray!100}{\checkmark}}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}] 
-            
-            \item \textcolor{gray!100}{Vivado}
-            \item \textcolor{gray!100}{Vivado SDK}
-            \item \textcolor{gray!100}{ModelSim}
-            \item \textcolor{gray!100}{Langage C}
-            \item \textcolor{gray!100}{Langage VHDL}
-            \item[\textcolor{white}{\checkmark}] \textcolor{gray!100}{} % ghost item
+\end{itemize}
+&
+\begin{itemize}
+    [label={}, topsep=8pt, partopsep=0pt, itemsep=0.5pt, parsep=2pt,after=\vspace*{-\baselineskip}]
+    \setlength{\itemsep}{10pt}
+    \item \textcolor{darkGray}{Outils}
+    \begin{itemize}[label={\textcolor{gray!100}{\checkmark}}, topsep=8pt, 
+        partopsep=0pt, itemsep=0.5pt, parsep=2pt, after=\vspace*{-\baselineskip}] 
+        
+        \item \textcolor{gray!100}{Vivado}
+        \item \textcolor{gray!100}{Vivado SDK}
+        \item \textcolor{gray!100}{ModelSim}
+        \item \textcolor{gray!100}{Langage C}
+        \item \textcolor{gray!100}{Langage VHDL}
+        \item \textcolor{gray!100}{Processeur MicroBlaze}
+        \item[\textcolor{white}{\checkmark}] \textcolor{gray!100}{} % ghost item
 
-        \end{itemize}
     \end{itemize}
+\end{itemize}
 \end{tabular}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TP JAVA %%%%%%%%%%%%%%%%%%%%%
@@ -1114,18 +1105,62 @@
 
 \vfill % Stretchable vertical space to center vertically the whole page
 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INTERNATIONAL EXPERIENCES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newpage
+
+
+\fancypagestyle{international_experiences}
+{
+    \fancyhf{} 
+    \fancyhead[L] % Left header
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \textcolor{darkGray}{Dossier de compétences } 
+    } 
+    \fancyhead[C] % Central header
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \textcolor{darkGray}{\textbf{Expériences à l'étranger}}
+    } 
+    \fancyhead[R]
+    {
+        \vspace*{10pt} % Adjust vertical space as needed
+        \begin{minipage}[b]{2cm}
+            \raisebox{-1.25\height}{\includegraphics[width=2cm]{UAB.png}}
+        \end{minipage}
+        \hspace{25pt}
+        \begin{minipage}[b]{2cm}
+            \raisebox{-1.20\height}{\includegraphics[width=0.75cm]{Ingeniarius.png}}
+        \end{minipage}
+    } 
+    \fancyfoot[C]{\thepage\ / \pageref{LastPage}} % Center footer with page number / total number of pages
+    \renewcommand{\headrulewidth}{2pt} % Header rule width
+    \renewcommand{\headrule}{\color{mainBlue}\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth} % Redefine color of header rule
+}
+
+\thispagestyle{international_experiences}
+
+\vspace*{2cm}
+
+
+hey
+
+
+\vfill % Stretchable vertical space to center vertically the whole page
+
+
+
+
+
+
+
+
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TABULAR TEMPLATE %%%%%%%%%%%%%%%%%%%%%%%%%
 
 
